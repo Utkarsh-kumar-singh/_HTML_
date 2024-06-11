@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        form {
+            margin: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- Comments -->
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <!-- Drop Down -->
+        <label for="dropDown">DropDown</label>
+        <select id="dropDown" name="dropDown">
+            <option value="01">Python</option>
+            <option value="02">Java</option>
+            <!-- For default Option we can Use "selected" tag -->
+            <option value="03" selected>C</option>
+        </select>
+        <br><br>
+
+        <!-- Check Box -- For the multiple options -->
+         <!-- Field_Set for making a box -->
+          <fieldset>
+            <legend>Pick One</legend>
+            <label for="coffee">Coffee</label>
+            <input type="checkbox" id="coffee" name="beverage" value="coffee">
+            <br>
+            <label for="tea">Tea</label>
+            <input type="checkbox" id="tea" name="beverage" value="tea">
+          </fieldset>
+
+          <!-- Radio is used only for one option -->
+          <fieldset>
+            <legend>Choose One</legend>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="answer" value="yes" checked>
+            <label for="no">No</label>
+            <input type="radio" id="no" name="answer" value="no">
+          </fieldset>
+          <br>
+          <br>
+          <button type="submit">Submit</button>
+          <input type="reset">
+          <!-- Use Range gives us slider -->
+    </form>
+</body>
+</html>
