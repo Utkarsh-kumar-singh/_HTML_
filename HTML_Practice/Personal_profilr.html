@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .home-1 {
+            color: rgb(0, 208, 255);
+            font-family: 'Times New Roman', Times, serif;   
+        }
+        .skill-1 {
+            color: rosybrown;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contact-1 {
+            color: cadetblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Valid and invalid in HTML */
+        input:valid {
+            border: 2px solid green;
+        }
+        input:invalid {
+            border: 2px solid red;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Utkarsh Kumar Singh</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam in tempora inventore consequatur minima iure quis vel ipsa! Temporibus voluptatibus praesentium neque ab nam dicta ducimus dolorum, quos eveniet.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h3 class="home-1">About</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nulla est architecto maxime ex dicta quo dolorem sequi distinctio quos odio rem laboriosam repellendus eveniet deserunt omnis cum laudantium recusandae magnam excepturi ullam velit, ut voluptatibus quod! Veritatis quaerat ratione eveniet dignissimos magnam rerum ab doloremque eaque cupiditate consequuntur at unde aspernatur, reiciendis pariatur molestias, adipisci cumque nisi! Ad, illo quisquam nam eius ipsum, distinctio perferendis dolor quaerat magnam ipsam obcaecati voluptatum perspiciatis eum dolorum minus officiis facere numquam quis sint omnis soluta sapiente eveniet quo. Aliquid, perferendis quae eius obcaecati assumenda voluptates temporibus, corrupti magnam facere maxime explicabo atque.
+        </p>
+    </section>
+    
+    <section id="skill">
+        <h3 class="skill-1">Skills</h3>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>CSS</li>
+            <li>React</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h3 class="contact-1">Contact</h3>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="number">Number</label>
+            <input type="text" name="number" id="number" pattern="\d{10}" title="Enter a 10-digit phone number" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
