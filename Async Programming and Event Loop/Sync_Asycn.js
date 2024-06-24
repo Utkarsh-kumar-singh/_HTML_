@@ -1,33 +1,39 @@
 console.log("Sync and Async file")
 
-// Synchronous Code
-console.log('Start');
+// // Synchronous Code
+// console.log('Start');
 
-function calculateSum() {
-  let sum = 0;
-  for (let i = 1; i <= 10; i++) {
-    sum += i;
-  }
-  console.log('Sum:', sum);
-}
+// function calculateSum() {
+//   let sum = 0;
+//   for (let i = 1; i <= 10; i++) {
+//     sum += i;
+//   }
+//   console.log('Sum:', sum);
+// }
 
-calculateSum();
+// calculateSum();
 
-console.log('End');
+// console.log('End');
 
-// Asynchronous Code
-console.log('Start');
+// // Asynchronous Code
+// console.log('Start');
 
-function calculateSumAsync() {
-  setTimeout(() => {
-    let sum = 0;
-    for (let i = 1; i <= 10; i++) {
-      sum += i;
-    }
-    console.log('Sum:', sum);
-  }, 1000); // Delay of 1 second
-}
+// function calculateSumAsync() {
+//   setTimeout(() => {
+//     let sum = 0;
+//     for (let i = 1; i <= 10; i++) {
+//       sum += i;
+//     }
+//     console.log('Sum:', sum);
+//   }, 1000); // Delay of 1 second
+// }
 
-calculateSumAsync();
+// calculateSumAsync();
 
-console.log('End');
+// console.log('End');
+
+// Arrow Functions
+//  let sum = (a,b) => {
+//     return a + b
+// }
+// console.log(sum(5,5)) // Output: 10

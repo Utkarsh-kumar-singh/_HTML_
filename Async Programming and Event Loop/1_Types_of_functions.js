@@ -9,13 +9,13 @@ console.log("This is the file for types of functions");
 // const rVal = greet("Hello")
 // console.log(rVal)
 
-// // Function Expression
+// // Function Expression -- Basically We store the address of the function into variable.
 // const Fexp = function (){
 //     console.log("I am the function expression")
 // }
 // Fexp()
 
-// // Arrow Functions
+// // Arrow Functions - Consice way to write the code.
 const AF = (name) => {
     console.log("I am the arrow function", name);
 }
