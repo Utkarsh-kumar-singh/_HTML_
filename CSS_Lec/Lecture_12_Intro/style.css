@@ -1,0 +1,51 @@
+/* Elemect Selector */
+/* Star Selector use where we want to use one property in all selectors */
+
+/* * {font-family: Arial, Helvetica, sans-serif;} */
+
+h2 {
+    color: aqua;
+    background-color: black;
+    font-size: 2rem;
+}
+
+/* span {
+    font-size: 3rem;
+}
+
+.capital-c {
+    font-size: 3rem;
+}
+p{
+    font-size: 1rem;
+    text-decoration: wavy;
+    font-style: italic;
+}  */
+
+.Para{
+    font-size: 2rem;
+    text-decoration: wavy;
+    font-style: italic;
+    color: aqua;
+}
+
+#Unique{
+    font-size: 2rem;
+    text-decoration: wavy;
+    font-style: italic;
+    color: pink;
+    background-color: azure;
+    text-decoration: underline;
+}
+
+#Unique2{
+    font-size: 2rem;
+    text-decoration: wavy;
+    font-style: italic;
+    color: pink;
+    background-color: azure;
+}
+
+.Para.Some{
+    background-color: cadetblue;
+}

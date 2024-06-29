@@ -1,0 +1,19 @@
+/* Descendant Combinator */
+.container p {
+    color: blue; /* Applies to all <p> elements inside .container */
+}
+
+/* Child Combinator */
+.container > div > p {
+    color: red; /* Applies to <p> elements that are direct children of <div> inside .container */
+}
+
+/* Adjacent Sibling Combinator */
+h1 + p {
+    color: green; /* Applies to <p> element immediately after <h1> */
+}
+
+/* General Sibling Combinator */
+h2 ~ p {
+    color: yellow; /* Applies to all <p> elements that are siblings of <h2> */
+}
