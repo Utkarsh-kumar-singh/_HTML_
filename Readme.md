@@ -4,6 +4,7 @@
 element. This can be useful for ensuring a better user experience and maintaining the layout's integrity. -->
 
 <!-- The .content-box element will have a total width of 260px (200px width + 20px padding * 2 + 10px border * 2). -->
+
 <!-- The .border-box element will have a total width of 200px, as the padding and border are included within the specified width. -->
 
 <!-- Explanation:
