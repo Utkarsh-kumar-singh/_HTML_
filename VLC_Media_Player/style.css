@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+html{
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+}
+
+header{
+    background-color: orangered;
+    height: 5rem;
+}
+
+/* Title Bar Styling */
+.title-bar{
+    height: 50%;
+    outline: 2px solid black;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.img-class{
+    height: 50%;
+    margin-left: 0.7rem;
+}
+.title-text{
+    font-size: 1rem;
+}
+
+/* Menu Bar Styling */
+.menu-bar{
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 0.7em;
+    align-items: center;
+    height: 50%;
+}
+
+/* Main bar Styling */
+main{
+    background-color: whitesmoke;
+    height: calc(100vh - 8rem);
+}
+
+/* Footer Styling */
+footer{
+    height: 3rem;
+    background-color: yellowgreen;
+}
+
+.menu{
+    position: relative;
+}
+.menu-items{
+    position: absolute;
+    /* left: 5px; */
+    top: 16px;
+    background-color: darkolivegreen;
+    font-weight: bold;
+}
