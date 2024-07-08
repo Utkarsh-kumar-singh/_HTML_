@@ -22,8 +22,42 @@ header{
     height: 50%;
     margin-left: 0.7rem;
 }
+
 .title-text{
     font-size: 1rem;
+}
+
+.menu{
+    position: relative;
+}
+.menu-items{
+    position: absolute;
+    /* left: 5px; */
+    top: 9px;
+    background-color: darkolivegreen;
+    font-weight: bold;
+    display: none;
+}
+
+.menu:hover .menu-items{
+    display: block;
+}
+
+.menu-items li {
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-items li:hover {
+    background-color: darkseagreen;
+}
+
+.menu-btn{
+    cursor: pointer;
+}
+.menu-btn:hover{
+    background-color: lightblue;
 }
 
 /* Menu Bar Styling */
@@ -35,25 +69,25 @@ header{
     height: 50%;
 }
 
+.video-input{
+    display: none;
+}
+
 /* Main bar Styling */
 main{
     background-color: whitesmoke;
     height: calc(100vh - 8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    height: 100%;
 }
 
 /* Footer Styling */
 footer{
     height: 3rem;
     background-color: yellowgreen;
-}
-
-.menu{
-    position: relative;
-}
-.menu-items{
-    position: absolute;
-    /* left: 5px; */
-    top: 16px;
-    background-color: darkolivegreen;
-    font-weight: bold;
 }
