@@ -1,25 +1,33 @@
-console.log("Practice for Code.")
+// <!-- Functions -->
 
-// let i = 0
-// while (i<=10){
-//     console.log("The value is ", i)
-//     i++
-// }
+// <!-- Functon Statement -->
+ const fs = function(a,b){
+    console.log("This is a function statement");
+    return a+b;
+ }
+ const fn_1 = fs(2,2);
+ console.log(fn_1);
 
-// let i = 10;
-// for (i=10; i>=1; i--){
-//     console.log("Print the value is", i)
-// }
-
-// function Alice(a){
-//     console.log("The age is",a )
-// }
-// Alice(25)
-
-let a = 10;
-function var1(value1){
-    console.log("The value is", a)
-    return value1
+// Function Expression----------
+const fs_1 = function(a,b){
+    console.log("This is a function expression");
+    return a+b;
 }
-let a1 = var1(20)
-console.log("The value of ",a1)
+const fn_2 = fs_1(2,6);
+console.log(fn_2);
+
+// Arrow Function
+const fs_2 = (a,b) => {
+    console.log("This is a arrow function");
+    return a+b;
+}
+const fn_3 = fs_2(2,6);
+console.log(fn_3);
+
+// IIFE
+const HaBi = (function(a,b){
+    console.log("This is a IIFE");
+    return a+b;
+})
+const fn_4 = HaBi(2,6);
+console.log("This is a IIFE", fn_4);
