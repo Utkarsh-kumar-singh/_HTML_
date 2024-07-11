@@ -1,93 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+/* ***************header************** */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-html{
-    font-family: "Bodoni Moda SC", serif;
-    font-optical-sizing: auto;
+/* html me pass  */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(238, 238, 238);
 }
 
-header{
-    background-color: orangered;
+header {
     height: 5rem;
+    /* background-color: lightcoral; */
 }
 
-/* Title Bar Styling */
-.title-bar{
+.titlebar {
     height: 50%;
-    outline: 2px solid black;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-.img-class{
-    height: 50%;
-    margin-left: 0.7rem;
+    gap: 0.2rem;
+
 }
 
-.title-text{
+.title-img {
+    /* 2.5rem -> 60% */
+    height: 60%;
+    margin-left: 1rem
+}
+
+.title {
     font-size: 1rem;
+
+
 }
 
-.menu{
+.menu-bar {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    height: 50%;
+}
+
+.menu {
     position: relative;
-}
-.menu-items{
-    position: absolute;
-    /* left: 5px; */
-    top: 9px;
-    background-color: darkolivegreen;
-    font-weight: bold;
-    display: none;
-}
-
-.menu:hover .menu-items{
-    display: block;
-}
-
-.menu-items li {
-    padding: 8px;
-    cursor: pointer;
-    color: white;
-}
-
-.menu-items li:hover {
-    background-color: darkseagreen;
-}
-
-.menu-btn{
     cursor: pointer;
 }
-.menu-btn:hover{
+
+.menu:hover {
     background-color: lightblue;
 }
 
-/* Menu Bar Styling */
-.menu-bar{
-    display: flex;
-    gap: 0.5rem;
-    margin-left: 0.7em;
-    align-items: center;
-    height: 50%;
+.menu-items {
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 1px;
+    width: 9rem;
+    display: none;
+    cursor: pointer;
 }
 
-.video-input{
+.menu:hover .menu-items {
+    display: block;
+}
+
+li {
+    padding: 0.25rem;
+}
+
+.videoInput {
     display: none;
 }
 
-/* Main bar Styling */
-main{
-    background-color: whitesmoke;
+/* main element */
+main {
+    background-color: black;
     height: calc(100vh - 8rem);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.video{
+.video {
     height: 100%;
 }
 
-/* Footer Styling */
-footer{
+
+/* footer */
+footer {
     height: 3rem;
-    background-color: yellowgreen;
+}
+
+.toast {
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 99px;
+    right: 47px;
+    display: none;
 }
