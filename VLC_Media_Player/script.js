@@ -136,3 +136,4 @@ const handleFullScreen = () => {
 
 const fullScreenElem = document.querySelector("#fullScreen");
 fullScreenElem.addEventListener("click",handleFullScreen)
+// Completed 
