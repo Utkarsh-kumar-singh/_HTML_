@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: darkslategray;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            height: 450px;
+            width: 450px;
+            background-color: rgb(224, 184, 184);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: changer 4s linear infinite alternate;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: darkgoldenrod;
+            border-radius: 100px;
+            left: 0px;
+            top: 0px;
+            animation-name: shape_change;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            position: absolute;
+            border: 3px solid black;
+            animation-direction: alternate;
+        }
+        .box:hover {
+            background-color: aqua;
+        }
+
+        @keyframes changer {
+            to {
+            transform: rotate(-360deg);
+        }
+
+        50% {
+            opacity: 1;
+        }
+        }
+
+        @keyframes shape_change {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 100%;
+                left: 0px;
+                transform: translateY(-100%);
+            }
+            40%{
+                border-radius: 0px;
+            }
+            50% {
+                top: 100%;
+                left: 100%;
+                transform: translate(-100%, -100%);
+            }
+            75% {
+                top: 0%;
+                left: 100%;
+                transform: translateX(-100%);
+            }
+            100% {
+                top: 0%;
+                left: 0%;
+            }
+        
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
