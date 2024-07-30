@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- React library -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- React DOM library -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel transpiler -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<style>
+    * {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<body>
+    <h1>JSX Example</h1>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const rootElement = document.getElementById('root');
+
+        // Counter component
+        function Counter(props) {
+            const [value, setValue] = React.useState(props.initialValue);
+
+            const handleIncrement = () => {
+                setValue(value + 1);
+            }
+
+            const handleDecrement = () => {
+                setValue(value - 1);
+            }
+
+            return (
+                <div>
+                    <div>{value}</div>
+                    <button onClick={handleIncrement}>Plus</button>
+                    <button onClick={handleDecrement}>Minus</button>
+                </div>
+            );
+        }
+
+        // Parent component to render three counters
+        function ThreeCounters() {
+            return (
+                <div>
+                    <Counter initialValue={0}/>
+                    <Counter initialValue={1} />
+                    <Counter initialValue={3}/>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<ThreeCounters />, rootElement);
+    </script>
+</body>
+
+</html>
